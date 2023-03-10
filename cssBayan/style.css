@@ -1,40 +1,56 @@
-*{
+*, *:before, *:after {
     box-sizing: border-box;
    }
 
 .body {
-   font-family: 'Rubik', sans-serif;
-   font-size: 16px;
+   font-family: 'Aria', sans-serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #fff;
+   background-color: rgb(211, 192, 167);
 }
 
 html {
    scroll-behavior: smooth; 
  }
 
-.container {
-   max-width: 1920px;
-   margin: 0 auto;
-}
-
-/*.wrapper{
-   max-width: 1720px;
-   margin: 0 auto;
- }*/
-
- .wrapper-body {
-   max-width: 1720px;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-end;
-   justify-content: center;
+ .text-h1 {
+   font-size: 3rem;
+   font-weight: bold;
  }
 
  .accordeon {
-   max-width: 1720px;
+   max-width: 100vh;
    margin: 0 auto;
+   margin: 0;
  }
 
- text {
-display: none;
+ .accordeon-item {
+   border: .1rem solid #2a086b;
+ }
+
+ .accordeon-input {
+   appearance: none;
+ }
+
+ .accordeon-input:checked ~ .text {
+   display: block;
+ }
+
+.text {
+   display: none;
+}
+
+/*.text:first-child {
+   display: block;
+}*/
+
+ .title-item {
+   display: block;
+   cursor: pointer;
+   font-size: 2rem;
+ }
+
+ .title-item:hover {
+   background-color: antiquewhite;
  }
